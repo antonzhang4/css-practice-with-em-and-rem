@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-size: 1.125rem;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 980px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header{
+    border: 1px solid black;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 1em 0;
+}
+
+
+@media (max-width: 600px) {
+    .columns{
+        flex-direction: column;
+    }
+
+}
+
+.col {
+    border: 2px solid green;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 70%;    
+}
+
+/*Have to reassign media query here because col-1,2 and 3 code above will overwrite the first media query if you reassign col in there*/
+@media (max-width: 600px) {
+    .col-1, .col-2, .col-3 {
+        width: 100%;
+    }    
+}
+
+.col-bg{
+    margin-right: 0em;
+    background: #312614;
+    color: white;
+    padding: 1em;
+}
+
+
+
